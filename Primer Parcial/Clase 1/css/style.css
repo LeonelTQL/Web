@@ -17,3 +17,24 @@ strong {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: small;
 }
+
+dt {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    background-color: rgba(14, 175, 193, 0.641);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
