@@ -7,42 +7,67 @@
     <title>Mi primera pagina web HTML</title>
 </head>
 <body>
-   
-    <center><h1>Paises destino</h1></center>
-    <H2>Noruega</H2>
-    <center> <a href="https://pixabay.com/es/images/search/noruega/" target="_blank"><img src="./img/noruega.png" alt="Noruega" width="700" height="500"></a></center>
-    <p> Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, 
-        es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos <strong>vikingos</strong>
-        preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia 
-        el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente 
-        en el centro olímpico Lillehammer.</p>
-        <dl>
-            <dt>Localizacion</dt>
-                <dd>Continente - Europa</dd>
-                <dd>Capital - Oslo</dd>
-                <dd>Gentilicio - Noruego</dd>
-                <dd>
-            <dt>Datos Generales</dt>
-                <dd>Idioma - Noruego</dd>
-                <dd>Moneda - Corona Noruega</dd>
-                <dd>Población - 5.4 millones</dd>
-        </dl>
-    <H2>Corea</H2>
-    <center><a href="https://unsplash.com/es/s/fotos/seoul" target="_blank"><img src="./img/seul.jpg" alt="seul" width="700" height="500"></a></center>
-    <p> Seúl, pronunciado, oficialmente Ciudad Especial de Seúl, es la capital de <strong>Corea del Sur</strong> desde la creación de esta 
-        república en 1948, la capital histórica de Corea desde hace más de 600 años y la ciudad más poblada de la península 
-        de Corea.</p>
-        <dl>
-            <dt>Localizacion</dt>
-                <dd>Continente - Asia</dd>
-                <dd>Pais - Seul</dd>
-                <dd>Gentilicio - Coreano</dd>
-                <dd>
-            <dt>Datos Generales</dt>
-                <dd>Idioma - Coreano</dd>
-                <dd>Moneda - Won</dd>
-                <dd>Población - 9.4 millones</dd>
-        </dl>
+    <div class="conteiner">
+        <header>
+            <center>
+                <h1>Paises destino</h1>
+            </center>
+        </header>
+        
+        <section>
+            <p class="Nor">Noruega</p>
+            <center>
+                 <a href="https://pixabay.com/es/images/search/noruega/" target="_blank">
+                    <img src="./img/noruega.png" alt="Noruega" width="700" height="500">
+                </a>
+            </center>
+            <p> Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, 
+                es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos <strong>vikingos</strong>
+                preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia 
+                el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente 
+                en el centro olímpico Lillehammer.</p>
+                <dl id="localizacionNor">
+                    <dt>Localizacion</dt>
+                        <dd>Continente - Europa</dd>
+                        <dd>Capital - Oslo</dd>
+                        <dd>Gentilicio - Noruego</dd>
+                        <dd>
+                    <dt>Datos Generales</dt>
+                        <dd>Idioma - Noruego</dd>
+                        <dd>Moneda - Corona Noruega</dd>
+                        <dd>Población - 5.4 millones</dd>
+                </dl>
+        </section>
+        <section>
+            <p class="Cor">Corea</p>
+                <center>
+                    <a href="https://unsplash.com/es/s/fotos/seoul" target="_blank">
+                        <img src="./img/seul.jpg" alt="seul" width="700" height="500">
+                    </a>
+                </center>
+                <p> Seúl, pronunciado, oficialmente Ciudad Especial de Seúl, es la capital de <strong>Corea del Sur</strong> desde la creación de esta 
+                    república en 1948, la capital histórica de Corea desde hace más de 600 años y la ciudad más poblada de la península 
+                    de Corea.</p>
+                    <dl id="localizacionCor">
+                        <dt>Localizacion</dt>
+                            <dd>Continente - Asia</dd>
+                            <dd>Pais - Seul</dd>
+                            <dd>Gentilicio - Coreano</dd>
+                            <dd>
+                        <dt>Datos Generales</dt>
+                            <dd>Idioma - Coreano</dd>
+                            <dd>Moneda - Won</dd>
+                            <dd>Población - 9.4 millones</dd>
+                    </dl>
+        </section>
+
+        <footer>
+                Diseñado por: Leonel Tipan
+            
+        </footer>
+
+    </div>
+
 
 </body>
 </html>
