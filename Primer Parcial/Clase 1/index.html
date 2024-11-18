@@ -8,12 +8,18 @@
 </head>
 <body>
     <div class="conteiner">
-        <header>
+        <header> 
             <center>
-                <h1>Paises destino</h1>
+                <h1>Paises Destino</h1>
             </center>
         </header>
         
+        <nav>
+            Home | <a href="index.html">Paises Destino </a> | <a href="listas.html">Listas</a> | <a href="tablas.html">Tablas</a> 
+        </nav>
+         Buscar: <input type="text" name="Buscar" id="Buscar">
+         <button id = "Paises"> Buscar </button>
+
         <section>
             <p class="Nor">Noruega</p>
             <center>
@@ -24,21 +30,19 @@
             <p> Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, 
                 es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos <strong>vikingos</strong>
                 preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia 
-                el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente 
-                en el centro olímpico Lillehammer.</p>
-                <dl id="localizacionNor">
-                    <dt>Localizacion</dt>
-                        <dd>Continente - Europa</dd>
-                        <dd>Capital - Oslo</dd>
-                        <dd>Gentilicio - Noruego</dd>
-                        <dd>
-                    <dt>Datos Generales</dt>
-                        <dd>Idioma - Noruego</dd>
-                        <dd>Moneda - Corona Noruega</dd>
-                        <dd>Población - 5.4 millones</dd>
-                </dl>
+                el sorprendente fiordo de Sogn.
+                <h6>Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente 
+                    en el centro olímpico Lillehammer.</h6>
+            </p>
+                <ol id="localizacionNor">
+                    <h3>Localizacion</h3>
+                        <li>Continente - Europa</li>
+                        <li>Capital - Oslo</li>
+                        <li>Gentilicio - Noruego</li>
+                </ol>
         </section>
         <section>
+            <button class="boton"> Visitar pagina </button>
             <p class="Cor">Corea</p>
                 <center>
                     <a href="https://unsplash.com/es/s/fotos/seoul" target="_blank">
@@ -59,7 +63,26 @@
                             <dd>Moneda - Won</dd>
                             <dd>Población - 9.4 millones</dd>
                     </dl>
+                    <button class="boton"> Visitar pagina  </button>
         </section>
+
+        <div>
+            <form action="submut" method="post">
+                <label>Nombres: </label><input type="text" id="nombre" placeholder="Nombres">
+                <br>
+                <label>Apellidos: </label><input type="text" id="apellido" placeholder="Apellidos">
+                <br>
+                <label>Contraseña: </label><input type="password" id="password" placeholder="Password">
+                <br>
+                <label>Tipo: </label><select id="cboTipo">
+                    <option > Estudiante</option>
+                    <option > Docente</option>
+                    <option > Admin</option>
+                </select>
+
+            </form>
+                <button class="boton">Guardar</button>
+         </div>
 
         <footer>
                 Diseñado por: Leonel Tipan
@@ -68,6 +91,30 @@
 
     </div>
 
+    <div class="login">
+        <form class="log">
+            <h1>LOG IN</h1>
+            <label>Nombre de Usuario</label>
+            <input id="input" type="text" placeholder="Nombre">
+            <label>Contraseña</label>
+            <input  id= "input" type="password" placeholder="Contraseña">
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <div class="Flex">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Possimus, 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+         </p>
+    </div>
+
 
 </body>
 </html>
+
+
+

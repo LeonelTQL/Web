@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleTab.css">
+    <title>Tablas</title>
+</head>
+<body>
+    <header> Tablas</header>
+    <section>
+        <p>
+            Uso de la etiqueta <em>table</em> para el manejo de envío o recibo de información
+        </p>
+
+        <article>
+            <table class="tableStyle" frame="hsides" rules="none" border="2" cellpadding="10" cellspacing="10">
+                <caption>Listado de personas</caption>
+                <!-- <colgroup>
+                    <col style="width: 500px; background-color:  rgb(100, 26, 110);">
+                </colgroup> -->
+                <thead>
+                    <tr>
+                        <th colspan="2" align="center">Nombres</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Leonel</td>
+                        <td>Tipan</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Leonel</td>
+                        <td>Tipan</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Leonel</td>
+                        <td>Tipan</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Información proporcionada por Tipan</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </section>  
+    
+    <div>
+        <form action="submit" method="post">
+            <label>Nombres: </label><input type="text" id="nombre" placeholder="Nombres">
+            <br>
+            <label>Apellidos: </label><input type="text" id="apellido" placeholder="Apellidos">
+            <br>
+            <label>Contraseña: </label><input type="password" id="password" placeholder="Password">
+            <br>
+            <label>Tipo: </label><select id="cboTipo">
+                <option > Estudiante</option>
+                <option > Docente</option>
+                <option > Admin</option>
+            </select>
+
+        </form>
+            <button class="boton">Guardar</button>
+     </div>
+</body>
+</html>
