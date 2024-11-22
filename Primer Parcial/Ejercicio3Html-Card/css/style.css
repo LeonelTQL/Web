@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: azure;
+}
+
+
+.card{
+    box-shadow: #000 0px 0px 50px;
+    margin: auto;
+    margin-top: 40px;
+    height: 700px;
+    background-color:bisque;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.card-header{
+    height: 350px;
+    background: url(../img/header.png);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+h4{
+    color: rgb(145, 141, 141);
+}
+
+.card-content{
+    padding: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.size{
+    margin-top: 50px;
+}
+
+.colors{
+    margin-top: 50px;
+}
+
+.red{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 40px;
+    color: red;
+    width:10px;
+    height: 10px;
+}
+
+.blue{
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 40px;
+    color: blue;
+    width:10px;
+    height: 10px;
+}
+.white{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 40px;
+    color: white;
+    width:10px;
+    height: 10px;
+}
+.green{
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 40px;
+    color: green;
+    width:10px;
+    height: 10px;
+}
