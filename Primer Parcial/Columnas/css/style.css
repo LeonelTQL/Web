@@ -1,0 +1,17 @@
+#noticias{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid;
+
+    /* implementar columnas al articuo */
+
+    column-count: 4;
+    column-gap: 20px;
+
+    column-rule-style:dotted;
+    column-rule-color: aquamarine;
+    column-rule-width: 10px;
+
+    column-rule: 1px solid violet;
+}
+
