@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(../img/images.jpg ) no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.articles {
+    width: 70%;
+}
+
+article {
+    display: flex;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+.date {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: #007acc;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    left: -50px;
+    margin-bottom: 10px;
+    
+}
+
+.date p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.date span {
+    font-size: 0.9rem;
+}
+
+.content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #555;
+    flex: 1;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.imagen{
+    width: 170px;
+    height: 120px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #007acc;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+
+
+aside {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+aside h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
