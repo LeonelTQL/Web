@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: brown;
+    
+}
+
+/* Los keyframes en css se utlizan para animar las propieades CSS.
+    Se utuliza para definir animaciones, permite crear una secuencia
+    de fotogramas claves (@keyframes) */
+
+
+    @keyframes cambiarcolores{
+        0%{
+            background-color:#e8e8e8;
+        }
+        25%{
+            background-color: #ffa157;
+            transform: scale(0.5);
+        }
+        50%{
+            background-color: #ffa157;
+            transform: scale(1.1);
+        }
+        75%{
+            background-color: #ffa157;
+            transform: scale(0.5);
+        }
+        100%{
+            background-color: #e8e8e8;
+            
+        }
+        
+    }
+
+
+.circulo{
+    background-color: #e8e8e8;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: cambiarcolores, volar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+    /* Simula un rebote con una curva personalizada */
+
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+/* Comienza lento, acelera en el medio, y desacelera al final */
+
+    animation-timing-function: ease-in-out;
+
+
+/* Divide la animación en pasos discretos con cambios al principio de cada paso */
+
+    animation-timing-function: step-start;
+
+
+/* Divide la animación en 5 pasos, con cambios al final de cada paso */
+
+    animation-timing-function: steps(5, end);
+
+
+/* Divide la animación en pasos discretos con cambios al final de cada paso */
+
+    animation-timing-function: step-end;
+
+
+
+}
+
+@keyframes volar{
+    0%{
+        
+    }
+    20%{
+        transform: translate(200px, 0px);
+    }
+    30%{
+        transform: translate(200px, 0px) rotate(90deg);
+    }
+    40%{
+        transform: translate(200px, 200px) rotate(180deg);
+    }
+    50%{
+        transform: translate(200px, 200px) rotate(180deg);
+    }
+    100%{}
+}
+
+/* .avion{
+    animation-name: volar, cambiarcolores;
+    animation-duration: 10s;   
+    background-color: #e8e8e8;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+} */
