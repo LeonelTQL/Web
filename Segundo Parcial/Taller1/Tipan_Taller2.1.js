@@ -45,7 +45,7 @@ function mostrarResultados(estudiantes) {
             }
         }
         console.log("Clasificación: " + estudiante.clasificacion);
-        console.log("Promedio: " + Math.round(estudiante.promedio * 100) / 100);
+        console.log("Promedio: " + (Number((estudiante.promedio * 100 + 0.5) - ((estudiante.promedio * 100 + 0.5) % 1)) / 100));
         console.log("Calificacion mas alta: " + estudiante.maximo);
         console.log("Calificacion mas baja: " + estudiante.minimo);
         console.log("--------------------");
@@ -85,8 +85,8 @@ function generarEstadisticas(estudiantes) {
         }
     }
 
-    console.log("Estudiante con mejor promedio: " + estudianteMejorPromedio + " (" + Math.round(mejorPromedio * 100) / 100 + ")");
-    console.log("Estudiante con peor promedio: " + estudiantePeorPromedio + " (" + Math.round(peorPromedio * 100) / 100 + ")");
+    console.log("Estudiante con mejor promedio: " + estudianteMejorPromedio + " (" + (Number((mejorPromedio * 100 + 0.5) - ((mejorPromedio * 100 + 0.5) % 1)) / 100) + ")");
+    console.log("Estudiante con peor promedio: " + estudiantePeorPromedio +" (" + (Number((peorPromedio * 100 + 0.5) - ((peorPromedio * 100 + 0.5) % 1)) / 100) +")" );
     console.log("--------------------");
 }
 
