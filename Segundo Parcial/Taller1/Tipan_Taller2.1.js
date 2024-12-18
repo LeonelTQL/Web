@@ -1,4 +1,3 @@
-// Arreglo inicial de estudiantes
 const estudiantes = [
     { nombre: "Juan", calificaciones: [12, 15, 14] },
     { nombre: "Ana", calificaciones: [8, 9, 10] },
@@ -93,6 +92,6 @@ function generarEstadisticas(estudiantes) {
 
 
 
-// Generar estadísticas y mostrar resultados
+
 generarEstadisticas(estudiantes);
 mostrarResultados(estudiantes);
