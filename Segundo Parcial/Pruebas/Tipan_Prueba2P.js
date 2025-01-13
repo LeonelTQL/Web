@@ -9,7 +9,7 @@ class Inventario {
         if (precio > 0 && cantidad > 0) {
             this.productos.push({ nombre, precio, cantidad, categoria });
         } else {
-            console.log('Error: Precio o cantidad no pueden ser menores o iguales a 0.');
+            console.log(`Error: Precio o cantidad no pueden ser menores o iguales a 0 del producto  ${nombre}.`);
             return;
         }
     }
