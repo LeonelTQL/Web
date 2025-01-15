@@ -67,16 +67,16 @@ class Orden {
     }
 
     agregarProducto(producto, cantidad) {
-        if (this._productos.length < Orden.MAX_PRODUCTOS) {
-            if (producto.stock >= cantidad) {
-                producto.stock -= cantidad; // Reducir stock al agregar el producto
-                this._productos.push({ producto, cantidad });
+            if (this._productos.length < Orden.MAX_PRODUCTOS) {
+                if (producto.stock >= cantidad) {
+                    producto.stock -= cantidad;
+                    this._productos.push({ producto, cantidad });
+                } else {
+                    console.log('No hay suficiente stock para agregar el producto');
+                }
             } else {
-                console.log('No hay suficiente stock para agregar el producto');
+                console.log('No se pueden agregar más productos a la orden');
             }
-        } else {
-            console.log('No se pueden agregar más productos a la orden');
-        }
     }
 
     calcularTotal() {
@@ -84,7 +84,7 @@ class Orden {
         for (let item of this._productos) {
             let precio = item.producto.precio;
             if (item.producto.categoria === 'Electronica') {
-                precio *= 0.9; // Aplicar descuento del 10% para la categoría 'Electronica'
+                precio *= 0.9; 
             }
             totalVenta += precio * item.cantidad;
         }
