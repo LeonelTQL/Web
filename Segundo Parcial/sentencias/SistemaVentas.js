@@ -97,21 +97,21 @@ class Orden {
     }
 
     mostrarOrden() {
+        const productosOrdenados = [...this._productos].sort((a, b) => b.producto.precio - a.producto.precio);
+    
         let productosOrden = '';
-        for (let item of this._productos) {
+        for (let item of productosOrdenados) {
             productosOrden += `${item.producto.toString()} (cantidad: ${item.cantidad})\n`;
         }
-
+    
         const subTotal = this.calcularTotal();
         const impuestos = this.calcularImpuestos();
         const total = subTotal + impuestos;
-
-        console.log(`Orden: ${this._idOrden}\nProductos:\n${productosOrden}Sub Total: ${subTotal.toFixed(2)}$\nImpuestos: ${impuestos.toFixed(2)}$\nTotal: ${total.toFixed(2)}$`);
+    
+        console.log(`Orden: ${this._idOrden}\nProductos:\n${productosOrden}Sub Total: ${subTotal}$\nImpuestos: ${impuestos}$\nTotal: ${total}$`);
     }
+    
 
-    listarProductosPorPrecioDescendente() {
-        return this._productos.sort((a, b) => b.producto.precio - a.producto.precio);
-    }
 }
 
 let producto1 = new Producto('Camisa', 20, 'Ropa', 50);
@@ -137,4 +137,17 @@ orden2.agregarProducto(producto5, 5);
 orden2.agregarProducto(producto6, 2);
 orden2.mostrarOrden();
 
-console.log('Productos ordenados por precio descendente:', orden2.listarProductosPorPrecioDescendente().map(p => p.producto.toString()));
+
+
+//Stock disminuya al realizar una venta
+
+//Descuento por Categoria
+//Crear una prpoiedad categoria en la clase producto
+//los productos de la categoria electronica de tener un descuento del 10 % a calcular el total de su venta
+
+//Implementar un metodo calcularImpuestos()
+
+//Listar productos por precio descendente
+
+//Asegurarse que los precios no puedan ser negativos al establecerlos en la clase producto
+
