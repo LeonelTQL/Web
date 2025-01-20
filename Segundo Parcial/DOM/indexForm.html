@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario con DOM JS</title>
+</head>
+<body>
+    <form id= "formulario"action="">
+        Nombre: <input type="text" name="nombre" value="Carolina">
+        <br>
+        Apellido: <input type="text" name="apellido" value="Miño">
+        <br>
+        Email: <input type="email" name="email" value="cminov@mail.com">
+    </form>
+    <button onclick="mostrasValores()" type = "submit">Mostrar</button>
+    <div id="valores"></div>
+    <script>    
+        function mostrasValores(){
+            let formulario = document.forms['formulario'];
+            let texto = '';
+            
+            for (const element of formulario){
+                texto += element.value + ' ';
+            }
+            // console.log(texto);
+            // document.getElementById('valores').innerHTML = texto;
+
+            //Otra forma de hacerlo
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            let email = formulario['email'];
+
+            texto = nombre.value + ' ' + apellido.value + ' ' + email.value;
+            document.getElementById('valores').innerHTML = texto;
+            
+        }
+    </script>
+</body>
+</html>
