@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 5 - Eventos en JavaScript</title>
+
+    <style>
+        #Panel {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            display: none;
+        }
+        #AreadeComentario {
+            width: 100%;
+            min-height: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Titulo">Título Principal</h1>
+    <button id="Desplegar">Mostrar Panel</button>
+    <br><br>
+
+    <div id="Panel">
+        <form id="Formulario">
+            <div>
+                Título de la página: <input type="text" id="NuevoTitulo">
+                <br> <br>
+            </div>
+            <div>
+                Color de fondo: <input type="color" id="bgColor">
+                <br><br>
+            </div>
+            <div>
+
+                    <input type="checkbox" id="Comentarios">
+                    Habilitar comentarios
+
+            </div>
+        </form>
+        
+        <textarea id="AreadeComentario" disabled></textarea>
+
+        <h3>Lista de elementos (click para eliminar):</h3>
+        <ul id="Lista">
+            <li class="item">Elemento 1</li>
+            <li class="item">Elemento 2</li>
+            <li class="item">Elemento 3</li>
+        </ul>
+    </div>
+
+    <script>
+        const botonDesplegar = document.getElementById('Desplegar');
+        const panelConfig = document.getElementById('Panel');
+        const inputTitulo = document.getElementById('NuevoTitulo');
+        const tituloPrincipal = document.getElementById('Titulo');
+        const inputColor = document.getElementById('bgColor');
+        const habilitarComentarios = document.getElementById('Comentarios');
+        const areaComentarios = document.getElementById('AreadeComentario');
+        const listaItems = document.getElementById('Lista');
+
+        botonDesplegar.addEventListener('click', () => {
+            const estaOculto = panelConfig.style.display === 'none' || !panelConfig.style.display;
+            panelConfig.style.display = estaOculto ? 'block' : 'none';
+            botonDesplegar.textContent = estaOculto ? 'Ocultar Panel' : 'Mostrar Panel';
+        });
+
+        inputTitulo.addEventListener('input', (e) => {
+            tituloPrincipal.textContent = e.target.value || 'Título Principal';
+        });
+
+        inputColor.addEventListener('input', (e) => {
+            document.body.style.backgroundColor = e.target.value;
+        });
+
+        habilitarComentarios.addEventListener('change', (e) => {
+            areaComentarios.disabled = !e.target.checked;
+        });
+
+        listaItems.addEventListener('click', (e) => {
+            if (e.target.classList.contains('item')) {
+                e.target.remove();
+            }
+        });
+    </script>
+</body>
+</html>
