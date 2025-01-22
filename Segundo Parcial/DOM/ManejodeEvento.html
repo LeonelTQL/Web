@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Evento con DOM JS</title>
+</head>
+<body onload = "entrar()">
+    <!-- Este evento se ejcetua cuando se terminade cargar la pagina -->
+
+    <!-- <h1 id="titulo" onclick="this.innerHTML = 'Nuevo Titulo'">Evento onclick()</h1> -->
+    <!-- <h1 id="titulo" onclick="cambiarTexto(this)">Evento onclick()</h1> -->
+    <!-- <h1 id="titulo">Evento onclick()</h1> -->
+    <!-- <h1 id="titulo">Evento onload()</h1> -->
+    <!-- <h1 id="titulo">Evento onchange()</h1> -->
+    <!-- <h1 id="titulo" onmouseover = "rojo(this)" onmouseout ="azul(this)">Evento onmouseover() y onmouseout()</h1> -->
+    <!-- <h1 id="titulo" onmousedown = "rojo(this)" onmouseup ="azul(this)" onclick="verde(this)">Evento onmousedown() y onmouseup()</h1> -->
+    <!-- <h1 id="titulo">Evento on focus() y onblur()</h1> -->
+    <!-- <h1 id="titulo">Evento addListener</h1> -->
+    <!-- <h1 id="titulo">Evento addListener con funciones tipo flecha</h1> -->
+
+
+
+    <!-- <div id = "mostrar"></div> -->
+
+    <!-- Nombre: <input type = "text" onchange = "convertir(this)"> -->
+
+    <!-- Nombre: <input type = "text" onfocus = "cambiar(this)" onblur="regresar(this)">
+    <br><br>
+    Apellido: <input type = "text" onfocus = "cambiar(this)" onblur="regresar(this)"> -->
+
+    <!-- Nombre: <input type ="text" id = "nombre">
+    <br><br>
+    Apellido: <input type ="text" id = "apellido"> -->
+<form action="" method = "get" id = "formulario">
+    Nombre: <input type ="text" id = "nombre">
+    <br><br>
+    Apellido: <input type ="text" id = "apellido">
+</form>
+
+
+
+    <script>
+        // function cambiarTexto(titulo){
+        //     // console.log(titulo);
+        //     titulo.innerHTML = 'Cambiamos el texto';
+        // }
+
+        // document.getElementById('titulo').onclick = cambiarTexto;
+        // //Estamos haciendo referencia, no estamos llamando a la funcion
+        // //Esta funcion es de tipo callback
+        // // de forma dinamica
+
+        // function cambiarTexto(){
+        //     document.getElementById('titulo').innerHTML = 'Otro titulo';
+        // }
+
+
+        // function entrar(){
+        //     alert('Fuiste hackeado HAHA');
+        // }
+
+        //Menejo de Cookies
+        //Son srchivos que guardan informacion cuando navegamos por la web
+        //Validan un formato (llsve, valor)
+
+        // let texto = '';
+        // if(navigator.cookieEnabled){
+        //     texto =   'Cookies enable'  
+        // }else{
+        //     texto = 'Cookies desable'
+        // }
+        // document.getElementById('mostrar').innerHTML = texto;
+
+        // function convertir(input){
+        //     input.value = input.value.toUpperCase();
+        // }
+
+        // function rojo(titulo){
+        //     titulo.style.color = 'red';
+        // }
+
+        // function azul(titulo){
+        //     titulo.style.color = 'blue';
+        // }
+
+        // function verde(titulo){
+        //     titulo.style.color = 'green';
+        // }
+
+        // function cambiar(elementInput){
+        //     elementInput.style.background = ('yellow');
+        // }
+
+        // function regresar(elementInput){
+        //     elementInput.style.background = ('white');
+        // }
+
+
+        // document.getElementById('nombre').addEventListener('click',cambiar); //FUncion de tipo callback
+        // document.getElementById('nombre').addEventListener('blur',regresar);
+        // document.getElementById('apellido').addEventListener('click',cambiar); //FUncion de tipo callback
+        // document.getElementById('apellido').addEventListener('blur',regresar);
+
+        // function cambiar(evento){
+        //     let componente = event.target;
+        //     componente.style.background = ('yellow');
+        // }
+
+        // function regresar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background = ('white');
+        // }
+
+        // document.getElementById('nombre').addEventListener('click', (evento) =>{
+        //     evento.target.style.backgroud = 'pink';
+        // });
+
+        // document.getElementById('nombre').addEventListener('blur', (evento) =>{
+        //     evento.target.style.backgroud = '';
+        // });
+
+        // function cambiar(evento){
+        //     let componente = event.target;
+        //     componente.style.background = ('yellow');
+        // }
+
+        // function regresar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background = ('white');
+        // }
+
+        // document.getElementById('apellido').addEventListener('click',cambiar);
+        // document.getElementById('apellido').addEventListener('click',regresar);
+
+        // let formulario = document.getElementById('formulario')
+        // formulario.getElementById('nombre').addEventListener('click', (evento) =>{
+        //     evento.target.style.backgroud = 'pink';
+        // });
+
+        // formulario.getElementById('nombre').addEventListener('blur', (evento) =>{
+        //     evento.target.style.backgroud = '';
+        // });
+
+    </script>
+</body>
+</html>
